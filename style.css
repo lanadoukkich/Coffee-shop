@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #4b2e2e;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+.logo{
+color: white;
+font-size: 30px;
+font-weight: bold;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: #d4a373;
+}
+.hero{
+    height: 90vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/Coffee.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 20px;
+}
+.hero p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.hero a{
+    text-decoration: none;
+    background-color: #4b2e2e;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.hero a:hover{
+    transform: scale(1.1);
+    background-color: #3a2222;
+}
+.features{
+    padding: 80px 60px;
+    text-align: center;
+}
+.features h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #4b2e2e;
+}
+.features-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.box{
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    transition: 0.3s;
+}
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.box h3{
+    color: #4b2e2e;
+    margin-bottom: 15px;
+}
+.menu{
+    padding: 80px 60px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.menu h2{
+    font-size: 40px;
+    color: #4b2e2e;
+    margin-bottom: 50px;
+}
+.menu-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 280px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .4s;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card h3{
+    margin-top: 20px;
+    color: #4b2e2e;
+}
+.card p{
+    margin: 15px 0 25px;
+    font-size: 20px;
+    color: #777;
+}
+.card:hover{
+     transform: scale(1.05)
+     translateY(-10px);
+
+}
+.contact{
+    padding: 80px 60px;
+    text-align: center;
+}
+.contact h2{
+    font-size: 40px;
+    color: #4b2e2e;
+    margin-bottom: 40px;
+}
+form{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input,textarea{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+button{
+    background-color: #4b2e2e;
+    color: white;
+    border: none;
+    border-radius:30px ;
+    padding: 15px 35px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    transform: scale(1.05) translateY(-3px);
+    background-color: #3a2222;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+footer{
+    background-color: #4b2e2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    nav a{
+        margin-left: 0;
+    }
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.features-container .menu-container{
+    flex-direction: column;
+    align-items: center;
+}
+.hero h1{
+    font-size: 40px;
+    text-align: center;
+}
+.hero p{
+    text-align: center;
+    padding: 0 20px;
+}
+.card{
+    width: 100%;
+    max-width: 320px;
+}
+}
+.box i{
+    font-size: 45px;
+    color: #4b2e2e;
+    margin-bottom: 20px;
+}
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+.hero,
+.features,
+.menu,
+.contact {
+    animation: fadeUp 1s ease;
+}
+::selection{
+    background-color: #4b2e2e;
+    color: white;
+}
