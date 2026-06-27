@@ -211,7 +211,7 @@ nav{
     align-items: center;
     gap: 15px;
 }
-.features-container, .menu-container{
+.features-container,.menu-container{
     flex-direction: column;
     align-items: center;
 }
